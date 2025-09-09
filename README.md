@@ -4,7 +4,7 @@
 [![Firebase](https://img.shields.io/badge/Backend-Firebase-yellow?logo=firebase)](https://firebase.google.com/)  
 [![Google Maps](https://img.shields.io/badge/Maps-Google%20Maps-blue?logo=googlemaps)](https://developers.google.com/maps)  
 [![Android Studio](https://img.shields.io/badge/IDE-Android%20Studio-green?logo=androidstudio)](https://developer.android.com/studio)  
-[![Linkedin](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=www.linkedin.com/in/neon-chanda-883b9936a)]
+[![LinkedIn](https://custom-icon-badges.demolab.com/badge/LinkedIn-0A66C2?logo=linkedin-white&logoColor=fff)](www.linkedin.com/in/neon-chanda-883b9936a)
 
 🎯 Project Motivation
 
@@ -27,7 +27,7 @@ This project demonstrates how mobile apps + cloud integration can streamline res
 - **Database:** Firebase Firestore  
 - **APIs & Services:** Google Maps SDK, Firebase Authentication, CameraX
 
-
+This project is for educational purposes only.
 ## 📖 Learning Outcomes
 
 - **Firebase integration (Firestore, Authentication, Storage)**
