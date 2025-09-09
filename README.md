@@ -42,7 +42,7 @@ This project is for educational purposes only.
 Here’s a quick look at the Smart Parking App in action:
 
 ### Landing & Booking
-![Landing Page](Images/Screenshot 2025-03-23 163704.png)
+![Landing Page](Images/Screenshot-2025-03-23-163704.png)
 
 
 ![Booking Page](images/Screenshot2025-03-25%025738.png)
