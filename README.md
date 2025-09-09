@@ -35,3 +35,21 @@ This project is for educational purposes only.
 - **Android development with Java (backend and frontend)**
 - **Using APIs**
 - **Designing apps with Material Design guidelines**
+
+
+## 📸 Visuals
+
+Here’s a quick look at the Smart Parking App in action:
+
+### Landing & Booking
+![Landing Page](images/Screenshot2025-03-25030058.png)
+
+
+![Booking Page](images/Screenshot2025-03-25025738.png)
+*Selecting a slot, entering details, and confirming the booking.*
+
+### Login & Permissions
+![Login](images/Screenshot2025-06-26171825.png)
+
+
+![Permission](images/Screenshot2025-03-23163704.png)
