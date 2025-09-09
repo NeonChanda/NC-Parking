@@ -26,7 +26,7 @@ This project is for educational purposes only.
 
 - **Language:** Java (Android)  
 - **Database:** Firebase Firestore  
-- **APIs & Services:** Google Maps SDK, Firebase Authentication, CameraX
+- **APIs & Services:** Google Maps SDK, Firebase Authentication, CameraX, Firebase Notifications
 
 
 ## 📖 Learning Outcomes
