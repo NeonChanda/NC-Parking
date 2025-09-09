@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    tools:context=".ManualActivity">
+
+    <!-- this manual page uses a linear layout to place the text views vertically down the page.
+     the gravity was set to top|center to ensure all of the text stayed within the center of the page
+     and 30dp padding was added to bring the text away from the edges of the screen to ensure non of the
+     text views moved off the screen.
+
+     a small margin to the top of each text view was also added to give enough spacing between the text views
+     to ensure the important information was not hard to read
+
+     the first textview was also given a text style of bold to make it stand out on the page as the title.-->
+
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        android:gravity="top|center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="User Manual"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Firstly, before booking a slot the app requires you to provide your driving license and NTU ID. You can upload both of these in the ID upload section of the landing page."
+            android:textAlignment="center"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Once you have completed this, you can then navigate to unavailable bookings to view slots booked by other users. You can create a booking in advance by clicking create a booking."
+            android:textAlignment="center"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="To navigate from your current location to Clifton Campus, click on open maps. This will open Google Maps and allow you navigate to the campus."
+            android:textAlignment="center"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="To configure any settings and view your profile click the settings icon at the bottom of the screen."
+            android:textAlignment="center"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="That is all, Happy Parking!"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="74dp"
+            android:layout_height="63dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/ntulogo" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

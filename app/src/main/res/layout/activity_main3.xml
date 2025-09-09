@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:padding="30dp"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+    <!-- this xml layout is for the user help page. this page once again uses a linear layout which is a consistent theme
+     throughout the app as it allows for items on the ui to be placed vertically in the layout. when paired with
+     small margins to the top it also gives sufficient spacing making it easier for the user to read what is on the page
+
+     the email section on this page uses textStyle bold to ensure uses can clearly see where and how they can contact
+     support.
+
+     two FAQ cards have been used to display common questions that could be asked by users followed by a text view
+     revealing the answer to the question.
+
+     icons have been added to the FAQ cards to offer a visual aid to the user making it easier to understand the questions and answers.
+
+     -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <!-- Support Email Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="For general enquiries, please contact:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/SupportEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="N1057074@my.ntu.ac.uk"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- FAQ Card 1 -->
+        <!--corner radius and card elevation to give the cards rounded corners with a small shadow to either side
+         giving the cards a consistent and modern look throughout the application.-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="16dp"
+            android:layout_marginBottom="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/header_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:src="@drawable/id_badge_3914763"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Do i need a valid license, NTU ID and NTU permit to park?"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="4dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Yes. To protect against damages and to verify who is parking, we require all three of these which can be uploaded as images in the ID upload section of the landing page."
+                    android:textSize="14sp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- FAQ Card 2 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="16dp"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/header_image2"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:src="@drawable/warning_5735886"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="What happens if I park without booking?"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="4dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Parking without booking may result in fines or penalties. Ensure you have a valid booking."
+                    android:textSize="14sp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Parking Manual Button -->
+        <!-- takes users to the manual page once clicked -->
+
+        <Button
+            android:id="@+id/UserManual"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="View User Manual"
+            android:textSize="16sp"
+            android:onClick="ManualClicked"
+            android:textStyle="bold"
+            android:backgroundTint="@color/NTU"
+            android:textColor="@color/black"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Parking Fines Button -->
+        <!-- takes users to the fines page once clicked -->
+        <Button
+            android:id="@+id/ParkingFines"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Parking Fines Information"
+            android:textSize="16sp"
+            android:onClick="FinesClicked"
+            android:textStyle="bold"
+            android:backgroundTint="@color/NTU"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20dp"/>
+
+
+        <ImageView
+            android:layout_width="74dp"
+            android:layout_height="63dp"
+            android:paddingBottom="13dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/ntulogo" />
+
+    </LinearLayout>
+
+</RelativeLayout>

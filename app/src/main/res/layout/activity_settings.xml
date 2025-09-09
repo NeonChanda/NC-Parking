@@ -1,0 +1,138 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".SettingsActivity">
+
+    <!-- red buttons have been used here to indicate that users are confirming important actions. the change password and delete account
+    buttons also feature dialogs in the backend to get a second confirmation from the user.-->
+    <!-- EditText: Enter New Password -->
+    <!-- Users can input their new password here, input type used again to hide users password for security-->
+    <EditText
+        android:id="@+id/editNewPassword"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:hint="Enter new password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/black"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <!-- Button: Change Password -->
+    <!-- Calls `ChangePasswordClicked` function when pressed -->
+
+    <Button
+        android:id="@+id/ChangePassword"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/red"
+        android:onClick="ChangePasswordClicked"
+        android:text="Change Password"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.614" />
+
+    <!-- Button: Delete Account -->
+    <!-- Calls `DeleteClicked` function when pressed -->
+
+    <Button
+        android:id="@+id/DeleteAccount"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/red"
+        android:onClick="DeleteClicked"
+        android:text="Delete Account"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.726" />
+
+    <!-- Button: Log Out -->
+    <!-- Calls `LogOutClicked` function when pressed -->
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/red"
+        android:onClick="LogOutClicked"
+        android:text="Log Out"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.835" />
+
+    <!-- Title: "Settings Page" -->
+    <!-- Positioned at the top of the page to indicate the purpose of this screen -->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Settings Page"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.634"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- ImageView: Settings Icon -->
+    <!-- Displays a settings icon at the top of the screen for visual representation -->
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="72dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/settings_3524636" />
+
+    <!-- Description Text -->
+    <!-- Provides information about what users can do on this page -->
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:text="From this page you will be able to reset your password, delete your account or log out."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="74dp"
+        android:layout_height="63dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ntulogo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

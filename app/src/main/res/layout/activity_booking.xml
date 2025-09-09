@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:padding="25dp"
+    android:background="@drawable/gradiient_background"
+    android:layout_height="match_parent"
+    tools:context=".BookingActivity">
+
+    <!-- this page only contains a list view which is used to show users current booked slots by other users
+     this list view is populated using the java objects from the parking slot model class and the parking adapter
+     a custom drawable file was used to create a gradient background behind the list view to add some styling to the page
+     rather than it just being plain white
+     once again elevation was used to add some depth to each section of the list and scroll bars were added to allow users to
+     scroll down the list and see all the bookings that were previously booked.-->
+
+    <ListView
+        android:id="@+id/exampleListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="1dp"
+        android:background="@android:color/white"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:elevation="5dp"
+        android:scrollbars="vertical"/>
+
+</RelativeLayout>

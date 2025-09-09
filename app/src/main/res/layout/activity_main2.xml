@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <!--  Email Input Field -->
+    <!-- Users enter their email here. The `inputType="textEmailAddress"` ensures proper formatting for email entry. -->
+    <!-- Ensures keyboard shows characters used for inputting email addresses. -->
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress2"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="356dp"
+        android:ems="10"
+        android:hint="Enter E-mail"
+        android:textColorHint="@color/black"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--  Sign Up Button
+    functions the same way as the sign up button seen in the main activity.
+    the only difference here is that it logs in existing users rather than creating new ones.-->
+
+    <Button
+        android:id="@+id/buttonexisting"
+        android:layout_width="wrap_content"
+        android:backgroundTint="@color/NTU"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:onClick="signInButtonClicked"
+        android:text="Sign in"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.777" />
+
+    <!-- Password Input Field -->
+    <!-- Similar to the email field but uses `inputType="textPassword"` to hide user input for security. -->
+
+    <EditText
+        android:id="@+id/editTextTextPassword2"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="1dp"
+        android:textColorHint="@color/black"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress2" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="360dp"
+        android:layout_height="228dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/nc_parking_high_resolution_logo" />
+
+    <!--  NTU University Logo -->
+    <!-- This logo is positioned towards the bottom of the screen for branding consistency. -->
+
+    <ImageView
+        android:layout_width="74dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ntulogo" />
+</androidx.constraintlayout.widget.ConstraintLayout>
